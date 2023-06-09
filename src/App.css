@@ -1,0 +1,146 @@
+:root {
+  --dark-green: #386641;
+  --medium-green: #6A994E;
+  --light-green: #A7C957;
+  --cream: #F2E8CF;
+  --red: #BC4749;
+}
+
+body {
+  background-color: var(--cream);
+  padding: 0;
+  margin: 0;
+  font-family: 'Domine', serif;
+  box-sizing: border-box;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--dark-green);
+}
+
+.header {
+  background-color: var(--medium-green);
+  color: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.textHeader {
+  max-width: 500px;
+}
+
+.textHeader h1 {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.textHeader p {
+  font-size: 24px;
+}
+
+.redButton {
+  display: flex;
+  background-color: var(--red);
+  color: var(--cream);
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px 40px;
+  font-size: 20px;
+  font-family: 'Domine', serif;
+}
+
+main h2 {
+  font-size: 48px;
+}
+
+main h3 {
+  font-size: 24px;
+}
+
+main .textComponent {
+  margin: 35px 0;
+}
+
+main .sliderWrapper {
+  margin: 55px 0;
+}
+
+main .sliderHeader {
+  background-color: var(--red);
+  color: var(--cream);
+  font-size: 44px;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+main .cardsWrapper {
+  display: flex;
+  gap: 20px;
+}
+
+main .imgCard {
+  margin-bottom: 15px;
+}
+
+main .imgCard img {
+  display: block;
+  max-width: auto;
+  width: 100%;
+}
+
+main .cardDescription {
+  background-color: white;
+  color: var(--red);
+  padding: 20px;
+}
+
+main .cardDescription h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+main .cardDescription h4 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: var(--dark-green) !important;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 160px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+  width: 100%;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-image: url('https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80');
+}
+
+.banner h2 {
+  font-size: 44px;
+}
+
+.banner ul {
+  display: flex;
+  gap: 25px;
+}
+
+.banner li {
+  font-size: 24px;
+}
