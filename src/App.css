@@ -29,7 +29,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 80px;
 }
 
 .textHeader {
@@ -143,4 +142,87 @@ main .cardDescription h4 {
 
 .banner li {
   font-size: 24px;
+}
+
+nav {
+  background-color: var(--dark-green);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--cream);
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: var(--light-green);
+}
+
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--dark-green);
+}
+
+.textComponent {
+  margin: 35px 0;
+}
+
+main .firstSection {
+  margin-top: 80px;
+}
+
+.textComponent h2 {
+  font-size: 48px;
+  color: var(--medium-green);
+}
+
+.textComponent p {
+  font-size: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.textComponent ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+}
+
+.textComponent li {
+  margin: 10px;
+}
+
+.textComponent a {
+  text-decoration: none;
+  color: var(--red);
+  transition: color 0.3s ease-in-out;
+}
+
+.textComponent a:hover {
+  color: var(--medium-green);
+}
+
+footer {
+  background-color: var(--medium-green);
+  color: var(--cream);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 18px;
 }

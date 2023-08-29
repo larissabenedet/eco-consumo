@@ -1,21 +1,18 @@
 import "./App.css";
 import Header from "./components/Header";
-import ImageBanner from "./components/ImageBanner";
-import SliderComponent from "./components/Slider";
-import TextComponent from "./components/TextComponent";
+import MainContent from "./components/MainContent";
+import Navigation from "./components/Navigation";
 
 function App() {
   return (
     <>
       <Header />
-      <main>
-        <TextComponent
-          title="Pequenas mudanças, grandes impactos"
-          description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit."
-        />
-        <SliderComponent />
-      </main>
-      <ImageBanner />
+      <Navigation />
+      <MainContent />
+
+      <footer>
+        <p>© 2023 Consumo Responsável. Todos os direitos reservados.</p>
+      </footer>
     </>
   );
 }

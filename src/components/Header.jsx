@@ -4,13 +4,12 @@ const Header = () => {
   return (
     <header className="header">
       <div className="textHeader">
-        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
+        <h1>Desbravando o Caminho do Consumo Responsável</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. At esse hic
-          amet harum reiciendis reprehenderit nihil minima repellendus commodi,
-          error.
+          Seja parte da mudança positiva. O consumo responsável é muito mais do
+          que simples escolhas: É um compromisso com nosso planeta e com as
+          gerações futuras.
         </p>
-        <button className="redButton">Lorem Ipsum</button>
       </div>
       <div>
         <img src={draw} alt="Pessoas cuidando da terra" />
