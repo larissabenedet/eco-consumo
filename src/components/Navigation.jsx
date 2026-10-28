@@ -1,25 +1,15 @@
-const Navigation = () => {
-  return (
-    <nav>
-      <ul>
-        <li>
-          <a href="#sobre">Sobre o Consumo Responsável</a>
-        </li>
-        <li>
-          <a href="#recursos">Recursos Educacionais</a>
-        </li>
-        <li>
-          <a href="#dicas">Dicas Práticas</a>
-        </li>
-        <li>
-          <a href="#historias">Histórias Inspiradoras</a>
-        </li>
-        <li>
-          <a href="#iniciativas">Iniciativas e Engajamento</a>
-        </li>
-      </ul>
-    </nav>
-  );
-};
+const Navigation = () => (
+  <nav className="site-nav" aria-label="Navegação principal">
+    <div className="nav-inner">
+      <a className="brand" href="#inicio" aria-label="Eco-Consumo início"><span>●</span> eco-consumo</a>
+      <div className="nav-links">
+        <a href="#floripa">Floripa primeiro</a>
+        <a href="#entenda">Entenda</a>
+        <a href="#pratica">Na prática</a>
+        <a href="#historias">Iniciativas</a>
+      </div>
+    </div>
+  </nav>
+);
 
 export default Navigation;
