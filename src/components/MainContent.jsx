@@ -1,187 +1,54 @@
-const MainContent = () => {
-  return (
-    <main>
-      <section id="sobre" className="textComponent firstSection">
-        <h2>Sobre o Consumo Responsável</h2>
-        <p>
-          O consumo responsável é fundamental para a preservação do meio
-          ambiente e da sociedade. Quando consumimos de forma consciente,
-          considerando os impactos ambientais e sociais, podemos contribuir para
-          um futuro mais sustentável. Saiba mais sobre como suas escolhas de
-          consumo podem fazer a diferença.
-        </p>
-      </section>
+const localNews = [
+  { date: "27 out 2026", tag: "Cidade", title: "Florianópolis avança com o Pacto Floripa Lixo Zero", text: "12 compromissos coletivos conectam reciclagem, compostagem e logística reversa na cidade.", href: "https://www.pmf.sc.gov.br/" },
+  { date: "18 set 2026", tag: "Comunidade", title: "Compostagem transforma resíduos em vida", text: "O programa Minhoca na Cabeça aproxima moradores de uma solução simples para os resíduos orgânicos.", href: "https://www.pmf.sc.gov.br/" },
+  { date: "05 ago 2026", tag: "Mar e natureza", title: "Cuidar da ilha começa pelas escolhas diárias", text: "Menos descartáveis e mais atenção ao descarte ajudam a proteger praias, restingas e lagoas.", href: "https://www.pmf.sc.gov.br/" },
+];
 
-      <section id="recursos" className="textComponent">
-        <h2>Recursos Educacionais</h2>
-        <p>
-          Explore nossos recursos educacionais e aprenda mais sobre práticas
-          sustentáveis de consumo:
-        </p>
-        <ul>
-          <li>
-            <a
-              href="http://portal.mec.gov.br/dmdocuments/publicacao8.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Educação para o Consumo Sustentável (PDF)
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://edisciplinas.usp.br/pluginfile.php/2648897/mod_resource/content/1/Consumo_Sustentavel.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Consumo Sustentável: Desafios e Oportunidades (PDF)
-            </a>
-          </li>
-        </ul>
-      </section>
+const tips = [
+  ["01", "Separe na origem", "Em Florianópolis, deixe recicláveis limpos e secos separados dos resíduos orgânicos."],
+  ["02", "Composte o possível", "Na ilha, restos de frutas e verduras podem virar adubo em uma composteira doméstica."],
+  ["03", "Escolha circular", "Prefira feiras, produtores locais e produtos duráveis para movimentar a economia de Floripa."],
+];
 
-      <section id="dicas" className="textComponent">
-        <h2>Dicas Práticas</h2>
-        <p>
-          Descubra dicas práticas para incorporar o consumo responsável em sua
-          rotina diária:
-        </p>
-        <ul>
-          <li>
-            <a
-              href="https://www.metlife.com.br/blog/planejamento-financeiro/dicas-para-diminuir-o-impacto-que-seu-consumo-faz-no-planeta/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Dicas para Diminuir o Impacto que seu Consumo Faz no Planeta
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://festivaldasustentabilidade.com.br/hoje-e-dia-do-consumo-consciente-veja-dicas-para-evitar-o-desperdicio-e-contribuir-com-a-sociedade/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Veja Dicas para Evitar o Desperdício e Contribuir com a Sociedade
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://blog.abac.org.br/educacao-financeira/habitos-de-consumo-consciente-dia-a-dia"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              40 Hábitos de Consumo Consciente no Dia a Dia
-            </a>
-          </li>
-        </ul>
-      </section>
+const MainContent = () => (
+  <main id="inicio">
+    <section id="floripa" className="local-section content-section">
+      <div className="section-heading">
+        <div><p className="eyebrow accent">Ponto de partida</p><h2>Florianópolis<br /><span>em movimento</span></h2></div>
+        <p className="section-lead">Uma cidade-ilha que inspira cuidado. Acompanhe notícias, ideias e caminhos para tornar o consumo consciente parte da rotina local.</p>
+      </div>
+      <div className="news-grid">
+        {localNews.map((item) => <article className="news-card" key={item.title}>
+          <div className="news-top"><span className="tag">{item.tag}</span><time>{item.date}</time></div>
+          <h3>{item.title}</h3><p>{item.text}</p>
+          <a href={item.href} target="_blank" rel="noreferrer">Ler referência <span aria-hidden="true">↗</span></a>
+        </article>)}
+      </div>
+      <p className="source-note">Conteúdos locais selecionados a partir de referências públicas da Prefeitura de Florianópolis. Atualizado em 28 out 2026.</p>
+    </section>
 
-      <section id="historias" className="textComponent">
-        <h2>Histórias Inspiradoras</h2>
-        <p>
-          Leia histórias inspiradoras de pessoas que adotaram práticas de
-          consumo responsável e tiveram impactos positivos:
-        </p>
-        <ul>
-          <li>
-            <a
-              href="https://umsoplaneta.globo.com/sociedade/consumo-consciente/noticia/2022/08/20/familias-sustentaveis-conheca-tres-historias-de-quem-coloca-isso-em-pratica-na-rotina.ghtml"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Famílias Sustentáveis: Conheça Três Histórias de Quem Coloca Isso
-              em Prática na Rotina
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://exame.com/negocios/dia-do-consumo-consciente-conheca-10-empresas-que-colaboram-para-um-mundo-mais-sustentavel/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Dia do Consumo Consciente: Conheça 10 Empresas que Colaboram para
-              um Mundo Mais Sustentável
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://revistagalileu.globo.com/Sociedade/noticia/2017/12/conheca-historias-DE-pessoas-que-reduziram-o-consumo-para-viver-melhor.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Conheça Histórias de Pessoas que Reduziram o Consumo para Viver
-              Melhor
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.unep.org/pt-br/noticias-e-reportagens/reportagem/conheca-sete-mulheres-que-estao-salvando-o-planeta"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Conheça Sete Mulheres que Estão Salvando o Planeta
-            </a>
-          </li>
-        </ul>
-      </section>
+    <section id="entenda" className="split-section content-section">
+      <div className="section-number">01</div>
+      <div><p className="eyebrow accent">Do conceito à cidade</p><h2>Consumir também<br /><span>é uma decisão coletiva.</span></h2></div>
+      <div className="copy-column"><p>Consumo responsável é escolher considerando o impacto ambiental, social e econômico de cada compra — antes, durante e depois dela.</p><p>Em Florianópolis, essa escolha se conecta ao cuidado com o mar, as áreas verdes e os bairros que formam a ilha.</p><a className="text-link" href="https://www.gov.br/mma/pt-br" target="_blank" rel="noreferrer">Aprofundar no tema <span>→</span></a></div>
+    </section>
 
-      <section id="iniciativas" className="textComponent">
-        <h2>Iniciativas e Engajamento</h2>
-        <p>
-          Conheça iniciativas relacionadas ao consumo responsável e saiba como
-          você pode se envolver para fazer a diferença:
-        </p>
-        <ul>
-          <li>
-            <a
-              href="https://autossustentavel.com/2017/10/5-iniciativas-que-incentivam-o-consumo-consciente.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              5 Iniciativas que Incentivam o Consumo Consciente
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://consumoresponsavel.org.br/carta-politica/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Carta Política do Consumo Responsável
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://observatorio3setor.org.br/noticias/terceiro-setor/lista-conheca-10-ongs-que-promovem-o-consumo-consciente/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Conheça 10 ONGs que promovem o consumo consciente
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://sebrae.com.br/sites/PortalSebrae/ufs/ap/artigos/conheca-a-cartilha-producao-e-consumo-responsavel,8e077ad8d4570610VgnVCM1000004c00210aRCRD"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Cartilha: Produção e Consumo Responsável
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.brasildefato.com.br/2021/09/27/iniciativa-que-promove-consumo-consciente-e-saudavel-completa-5-anos-no-parana"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Produtos da Terra une produtores agroecológicos da reforma agrária, agricultores familiares e empreendedores solidários
-            </a>
-          </li>
-        </ul>
-      </section>
-    </main>
-  );
-};
+    <section id="pratica" className="practice-section content-section">
+      <div className="section-heading"><div><p className="eyebrow accent">Um passo de cada vez</p><h2>Práticas que cabem<br /><span>na sua rotina</span></h2></div><p className="section-lead">O impacto cresce quando uma escolha simples se repete — e quando ela inspira quem está ao redor.</p></div>
+      <div className="tips-grid">{tips.map(([number, title, text]) => <article className="tip-card" key={number}><span className="tip-number">{number}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
+    </section>
+
+    <section id="historias" className="stories-section content-section">
+      <div className="section-heading"><div><p className="eyebrow accent">Gente que faz</p><h2>Ideias que já<br /><span>vivem em Floripa</span></h2></div><p className="section-lead">Conheça redes, projetos e fontes confiáveis para participar de uma cidade mais sustentável.</p></div>
+      <div className="resource-list">
+        <a href="https://www.pmf.sc.gov.br/" target="_blank" rel="noreferrer"><span>Prefeitura de Florianópolis</span><small>Programas municipais de resíduos e educação ambiental</small><b>↗</b></a>
+        <a href="https://www.ima.sc.gov.br/" target="_blank" rel="noreferrer"><span>IMA Santa Catarina</span><small>Informação ambiental e cuidado com os ecossistemas</small><b>↗</b></a>
+        <a href="https://www.gov.br/mma/pt-br" target="_blank" rel="noreferrer"><span>Ministério do Meio Ambiente</span><small>Guias para consumo e produção responsáveis</small><b>↗</b></a>
+      </div>
+    </section>
+
+    <section className="closing-banner"><p className="eyebrow">A ilha é nossa casa</p><h2>O futuro de Floripa<br /><em>começa no agora.</em></h2><a className="primary-button light" href="#pratica">Escolher um próximo passo <span>→</span></a></section>
+  </main>
+);
 
 export default MainContent;
