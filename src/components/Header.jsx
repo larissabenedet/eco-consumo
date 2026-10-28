@@ -1,16 +1,16 @@
-import draw from "../assets/draw.png";
+import coast from "../assets/floripa-coast.png";
 
 const Header = () => (
   <header className="hero">
     <div className="hero-content">
-      <p className="eyebrow">Guia local de escolhas conscientes</p>
-      <h1>Pequenas escolhas.<br /><em>Grande impacto.</em></h1>
-      <p className="hero-text">Informação prática para cuidar do planeta, da sua comunidade e do futuro de Florianópolis.</p>
-      <a className="primary-button" href="#floripa">Explorar Floripa sustentável <span aria-hidden="true">→</span></a>
+      <p className="hero-location">Florianópolis · SC e para todo o Brasil</p>
+      <h1>Consumir menos.<br /><em>Viver melhor.</em></h1>
+      <p className="hero-text">Suas escolhas diárias moldam o futuro do planeta. Aprenda, pratique e inspire-se a consumir com consciência.</p>
+      <div className="hero-actions"><a className="primary-button" href="#pratica">Começar pelas dicas <span aria-hidden="true">→</span></a><a className="secondary-button" href="#entenda">Por que importa?</a></div>
     </div>
     <div className="hero-art">
       <span className="hero-badge">Edição local<br /><strong>SC</strong></span>
-      <img src={draw} alt="Pessoas cuidando do planeta" />
+      <img src={coast} alt="Praia e mata nativa na costa de Florianópolis" />
     </div>
   </header>
 );

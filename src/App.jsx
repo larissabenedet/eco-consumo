@@ -6,8 +6,8 @@ import Navigation from "./components/Navigation";
 function App() {
   return (
     <div className="app-shell">
-      <Header />
       <Navigation />
+      <Header />
       <MainContent />
       <footer>
         <div className="footer-inner">
