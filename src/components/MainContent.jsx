@@ -1,13 +1,7 @@
 const localNews = [
-  { date: "27 out 2026", tag: "Cidade", title: "Florianópolis avança com o Pacto Floripa Lixo Zero", text: "12 compromissos coletivos conectam reciclagem, compostagem e logística reversa na cidade.", href: "https://www.pmf.sc.gov.br/" },
-  { date: "18 set 2026", tag: "Comunidade", title: "Compostagem transforma resíduos em vida", text: "O programa Minhoca na Cabeça aproxima moradores de uma solução simples para os resíduos orgânicos.", href: "https://www.pmf.sc.gov.br/" },
-  { date: "05 ago 2026", tag: "Mar e natureza", title: "Cuidar da ilha começa pelas escolhas diárias", text: "Menos descartáveis e mais atenção ao descarte ajudam a proteger praias, restingas e lagoas.", href: "https://www.pmf.sc.gov.br/" },
-];
-
-const tips = [
-  ["01", "Separe na origem", "Em Florianópolis, deixe recicláveis limpos e secos separados dos resíduos orgânicos."],
-  ["02", "Composte o possível", "Na ilha, restos de frutas e verduras podem virar adubo em uma composteira doméstica."],
-  ["03", "Escolha circular", "Prefira feiras, produtores locais e produtos duráveis para movimentar a economia de Floripa."],
+  { date: "27 out 2026", tag: "Cidade", title: "Florianópolis avança com o Pacto Floripa Lixo Zero", text: "12 compromissos coletivos conectam reciclagem, compostagem e logística reversa na cidade.", href: "https://floripalixozero.pmf.sc.gov.br/" },
+  { date: "18 set 2026", tag: "Comunidade", title: "Compostagem transforma resíduos em vida", text: "O programa Minhoca na Cabeça aproxima moradores de uma solução simples para os resíduos orgânicos.", href: "https://minhocacabeca.pmf.sc.gov.br/" },
+  { date: "05 ago 2026", tag: "Mar e natureza", title: "Cuidar da ilha começa pelas escolhas diárias", text: "Menos descartáveis e mais atenção ao descarte ajudam a proteger praias, restingas e lagoas.", href: "https://www.ima.sc.gov.br/index.php/biodiversidade/areas-protegidas" },
 ];
 
 const MainContent = () => (
@@ -34,8 +28,21 @@ const MainContent = () => (
     </section>
 
     <section id="pratica" className="practice-section content-section">
-      <div className="section-heading"><div><p className="eyebrow accent">Um passo de cada vez</p><h2>Práticas que cabem<br /><span>na sua rotina</span></h2></div><p className="section-lead">O impacto cresce quando uma escolha simples se repete — e quando ela inspira quem está ao redor.</p></div>
-      <div className="tips-grid">{tips.map(([number, title, text]) => <article className="tip-card" key={number}><span className="tip-number">{number}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
+      <div className="section-heading"><div><p className="eyebrow accent">Consumo no cotidiano</p><h2>Escolhas que<br /><span>fazem sentido</span></h2></div><p className="section-lead">Um caminho simples para consumir melhor em Florianópolis: observar antes de comprar, usar por mais tempo e devolver cada material ao ciclo certo.</p></div>
+      <div className="cycle-grid">
+        <article><span>01</span><h3>Repense antes de comprar</h3><p>Pergunte se precisa mesmo. Escolher menos evita extração, embalagem e desperdício.</p></article>
+        <article><span>02</span><h3>Reduza o descartável</h3><p>Leve sua garrafa, recuse excessos e prefira produtos duráveis e com pouca embalagem.</p></article>
+        <article><span>03</span><h3>Use por mais tempo</h3><p>Conserte, troque, doe e compartilhe. A economia circular também acontece nos bairros.</p></article>
+        <article><span>04</span><h3>Destine com cuidado</h3><p>Separe recicláveis e orgânicos para que a coleta seletiva e a compostagem funcionem melhor.</p></article>
+      </div>
+    </section>
+
+    <section id="projetos" className="projects-section content-section">
+      <div className="section-heading"><div><p className="eyebrow accent">Conservação em ação</p><h2>Projetos que<br /><span>cuidam da ilha</span></h2></div><p className="section-lead">Conheça iniciativas que aproximam ciência, educação ambiental e participação comunitária da vida em Florianópolis.</p></div>
+      <div className="projects-grid">
+        <a className="project-card" href="https://www.projetotamar.org.br/" target="_blank" rel="noreferrer"><span className="project-label">Fauna marinha</span><h3>Projeto TAMAR</h3><p>Proteção das tartarugas marinhas e educação para reduzir ameaças nas praias e no oceano.</p><b>Conhecer o projeto <span aria-hidden="true">↗</span></b></a>
+        <a className="project-card" href="https://www.projetolontra.org.br/" target="_blank" rel="noreferrer"><span className="project-label">Rios e manguezais</span><h3>Projeto Lontra</h3><p>Pesquisa e conservação das lontras e dos ambientes aquáticos que conectam a cidade à natureza.</p><b>Conhecer o projeto <span aria-hidden="true">↗</span></b></a>
+      </div>
     </section>
 
     <section id="historias" className="stories-section content-section">
