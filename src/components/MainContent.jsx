@@ -1,5 +1,3 @@
-import coast from "../assets/floripa-coast.png";
-
 const localNews = [
   { date: "27 out 2026", tag: "Cidade", title: "Florianópolis avança com o Pacto Floripa Lixo Zero", text: "12 compromissos coletivos conectam reciclagem, compostagem e logística reversa na cidade.", href: "https://floripalixozero.pmf.sc.gov.br/" },
   { date: "18 set 2026", tag: "Comunidade", title: "Compostagem transforma resíduos em vida", text: "O programa Minhoca na Cabeça aproxima moradores de uma solução simples para os resíduos orgânicos.", href: "https://minhocacabeca.pmf.sc.gov.br/" },
@@ -15,7 +13,6 @@ const tips = [
 const MainContent = () => (
   <main id="inicio">
     <section id="floripa" className="local-section content-section">
-      <div className="floripa-photo"><img src={coast} alt="Vista costeira de Florianópolis com mata nativa e mar" /><span>Florianópolis, SC</span></div>
       <div className="section-heading">
         <div><p className="eyebrow accent">Ponto de partida</p><h2>Florianópolis<br /><span>em movimento</span></h2></div>
         <p className="section-lead">Uma cidade-ilha que inspira cuidado. Acompanhe notícias, ideias e caminhos para tornar o consumo consciente parte da rotina local.</p>
@@ -39,6 +36,16 @@ const MainContent = () => (
     <section id="pratica" className="practice-section content-section">
       <div className="section-heading"><div><p className="eyebrow accent">Um passo de cada vez</p><h2>Práticas que cabem<br /><span>na sua rotina</span></h2></div><p className="section-lead">O impacto cresce quando uma escolha simples se repete — e quando ela inspira quem está ao redor.</p></div>
       <div className="tips-grid">{tips.map(([number, title, text]) => <article className="tip-card" key={number}><span className="tip-number">{number}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
+    </section>
+
+    <section id="ciclo" className="cycle-section content-section">
+      <div className="section-heading"><div><p className="eyebrow accent">Antes do descarte</p><h2>Um ciclo mais<br /><span>consciente</span></h2></div><p className="section-lead">O consumo responsável começa antes da compra e continua depois dela. Em Floripa, cada etapa ajuda a proteger a ilha.</p></div>
+      <div className="cycle-grid">
+        <article><span>01</span><h3>Repensar</h3><p>Preciso mesmo comprar? Escolher menos evita extração, embalagem e desperdício.</p></article>
+        <article><span>02</span><h3>Reduzir</h3><p>Leve sua garrafa, recuse descartáveis e prefira produtos com menos embalagens.</p></article>
+        <article><span>03</span><h3>Reutilizar</h3><p>Conserte, troque e compartilhe. A economia circular também acontece nos bairros.</p></article>
+        <article><span>04</span><h3>Destinar</h3><p>Separe corretamente e encontre os pontos de coleta e compostagem da cidade.</p></article>
+      </div>
     </section>
 
     <section id="historias" className="stories-section content-section">

@@ -6,7 +6,7 @@ const Navigation = () => (
         <a href="#floripa">Floripa primeiro</a>
         <a href="#entenda">Entenda</a>
         <a href="#pratica">Na prática</a>
-        <a href="#historias">Iniciativas</a>
+        <a href="#ciclo">Iniciativas</a>
       </div>
     </div>
   </nav>
