@@ -4,12 +4,6 @@ const localNews = [
   { date: "05 ago 2026", tag: "Mar e natureza", title: "Cuidar da ilha começa pelas escolhas diárias", text: "Menos descartáveis e mais atenção ao descarte ajudam a proteger praias, restingas e lagoas.", href: "https://www.ima.sc.gov.br/index.php/biodiversidade/areas-protegidas" },
 ];
 
-const tips = [
-  ["01", "Separe na origem", "Em Florianópolis, deixe recicláveis limpos e secos separados dos resíduos orgânicos."],
-  ["02", "Composte o possível", "Na ilha, restos de frutas e verduras podem virar adubo em uma composteira doméstica."],
-  ["03", "Escolha circular", "Prefira feiras, produtores locais e produtos duráveis para movimentar a economia de Floripa."],
-];
-
 const MainContent = () => (
   <main id="inicio">
     <section id="floripa" className="local-section content-section">
@@ -34,13 +28,12 @@ const MainContent = () => (
     </section>
 
     <section id="pratica" className="practice-section content-section">
-      <div className="section-heading"><div><p className="eyebrow accent">Um passo de cada vez</p><h2>Um ciclo mais<br /><span>consciente</span></h2></div><p className="section-lead">Práticas que cabem na sua rotina e ajudam a proteger o mar, as áreas verdes e os bairros de Florianópolis.</p></div>
-      <div className="tips-grid">{tips.map(([number, title, text]) => <article className="tip-card" key={number}><span className="tip-number">{number}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
+      <div className="section-heading"><div><p className="eyebrow accent">Consumo no cotidiano</p><h2>Escolhas que<br /><span>fazem sentido</span></h2></div><p className="section-lead">Um caminho simples para consumir melhor em Florianópolis: observar antes de comprar, usar por mais tempo e devolver cada material ao ciclo certo.</p></div>
       <div className="cycle-grid">
-        <article><span>01</span><h3>Repensar</h3><p>Preciso mesmo comprar? Escolher menos evita extração, embalagem e desperdício.</p></article>
-        <article><span>02</span><h3>Reduzir</h3><p>Leve sua garrafa, recuse descartáveis e prefira produtos com menos embalagens.</p></article>
-        <article><span>03</span><h3>Reutilizar</h3><p>Conserte, troque e compartilhe. A economia circular também acontece nos bairros.</p></article>
-        <article><span>04</span><h3>Destinar</h3><p>Separe corretamente e encontre os pontos de coleta e compostagem da cidade.</p></article>
+        <article><span>01</span><h3>Repense antes de comprar</h3><p>Pergunte se precisa mesmo. Escolher menos evita extração, embalagem e desperdício.</p></article>
+        <article><span>02</span><h3>Reduza o descartável</h3><p>Leve sua garrafa, recuse excessos e prefira produtos duráveis e com pouca embalagem.</p></article>
+        <article><span>03</span><h3>Use por mais tempo</h3><p>Conserte, troque, doe e compartilhe. A economia circular também acontece nos bairros.</p></article>
+        <article><span>04</span><h3>Destine com cuidado</h3><p>Separe recicláveis e orgânicos para que a coleta seletiva e a compostagem funcionem melhor.</p></article>
       </div>
     </section>
 
