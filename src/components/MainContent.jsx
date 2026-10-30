@@ -1,7 +1,7 @@
 const localNews = [
-  { date: "27 out 2026", tag: "Cidade", title: "Florianópolis avança com o Pacto Floripa Lixo Zero", text: "12 compromissos coletivos conectam reciclagem, compostagem e logística reversa na cidade.", href: "https://floripalixozero.pmf.sc.gov.br/" },
+  { date: "27 out 2026", tag: "Cidade", title: "Florianópolis Capital Lixo Zero", text: "A política municipal incentiva a redução de resíduos, a reciclagem, a compostagem e a economia circular.", href: "https://www.pmf.sc.gov.br/" },
   { date: "18 set 2026", tag: "Comunidade", title: "Compostagem transforma resíduos em vida", text: "O programa Minhoca na Cabeça aproxima moradores de uma solução simples para os resíduos orgânicos.", href: "https://minhocacabeca.pmf.sc.gov.br/" },
-  { date: "05 ago 2026", tag: "Mar e natureza", title: "Cuidar da ilha começa pelas escolhas diárias", text: "Menos descartáveis e mais atenção ao descarte ajudam a proteger praias, restingas e lagoas.", href: "https://www.ima.sc.gov.br/index.php/biodiversidade/areas-protegidas" },
+  { date: "05 ago 2026", tag: "Mar e natureza", title: "Áreas protegidas de Santa Catarina", text: "Conheça informações oficiais sobre unidades de conservação e os ecossistemas que ajudam a proteger a ilha.", href: "https://www.ima.sc.gov.br/" },
 ];
 
 const MainContent = () => (
