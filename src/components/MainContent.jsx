@@ -41,7 +41,7 @@ const MainContent = () => (
       <div className="section-heading"><div><p className="eyebrow accent">Conservação em ação</p><h2>Projetos que<br /><span>cuidam da ilha</span></h2></div><p className="section-lead">Conheça iniciativas que aproximam ciência, educação ambiental e participação comunitária da vida em Florianópolis.</p></div>
       <div className="projects-grid">
         <a className="project-card" href="https://www.projetotamar.org.br/" target="_blank" rel="noreferrer"><span className="project-label">Fauna marinha</span><h3>Projeto TAMAR</h3><p>Proteção das tartarugas marinhas e educação para reduzir ameaças nas praias e no oceano.</p><b>Conhecer o projeto <span aria-hidden="true">↗</span></b></a>
-        <a className="project-card" href="https://www.projetolontra.org.br/" target="_blank" rel="noreferrer"><span className="project-label">Rios e manguezais</span><h3>Projeto Lontra</h3><p>Pesquisa e conservação das lontras e dos ambientes aquáticos que conectam a cidade à natureza.</p><b>Conhecer o projeto <span aria-hidden="true">↗</span></b></a>
+        <a className="project-card" href="https://instagram.com/projetolontraekko" target="_blank" rel="noreferrer"><span className="project-label">Rios e manguezais</span><h3>Projeto Lontra</h3><p>Pesquisa e conservação das lontras e dos ambientes aquáticos que conectam a cidade à natureza.</p><b>Conhecer o projeto <span aria-hidden="true">↗</span></b></a>
       </div>
     </section>
 
