@@ -6,9 +6,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint src tests playwright.config.js --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "build:deploy": "node scripts/build-deploy.mjs"
+    "build:deploy": "node scripts/build-deploy.mjs",
+    "test": "playwright test --grep-invert @visual",
+    "test:visual": "playwright test --grep @visual --workers=1",
+    "test:visual:update": "playwright test --grep @visual --update-snapshots --workers=1",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report"
   },
   "engines": {
     "node": "24.x"
@@ -21,6 +26,9 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "@fontsource-variable/dm-sans": "^5.3.0",
+    "@fontsource-variable/fraunces": "^5.3.0",
+    "@playwright/test": "1.56.1",
     "@posthog/cli": "^0.20.1",
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
