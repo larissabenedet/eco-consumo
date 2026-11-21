@@ -54,10 +54,9 @@ Use Node 24 (`nvm install && nvm use`, se você usa nvm) e Yarn 1:
 
 ```bash
 yarn install --frozen-lockfile
-cp .env.example .env.local
 ```
 
-Em `.env.local`, preencha `VITE_POSTHOG_KEY` com o project token público e
+Crie um arquivo `.env.local` na raiz do projeto. Preencha `VITE_POSTHOG_KEY` com o project token público e
 `VITE_POSTHOG_HOST` com o host de ingestão do projeto (neste projeto,
 `https://us.i.posthog.com`). Reinicie o servidor depois de alterar variáveis.
 As variáveis `POSTHOG_CLI_*` não são necessárias para desenvolvimento local.
