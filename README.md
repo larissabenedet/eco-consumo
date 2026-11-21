@@ -149,7 +149,7 @@ um teste passar. Os relatórios e traces de falhas ficam fora do Git.
 
 O GitHub Actions executa os testes funcionais e responsivos, instalação com
 lockfile congelado e lint em cada PR e push na main. As comparações por screenshot
-ficam separadas, pois as referências locais são do macOS e o CI usa Linux.
+ficam separadas, pois as referências locais são do macOS e o CI usa Ubuntu 24.04.
 Playwright está fixado em 1.56.1 para permitir a execução neste macOS 13.
 
 ### Estrutura principal
@@ -314,7 +314,7 @@ Failure reports and traces are excluded from Git.
 
 GitHub Actions runs functional and responsive tests, frozen-lockfile installation,
 and lint on each PR and push to main. Screenshot comparisons are separate because
-local baselines use macOS and CI uses Linux. Playwright is pinned to 1.56.1 to
+local baselines use macOS and CI uses Ubuntu 24.04. Playwright is pinned to 1.56.1 to
 allow execution on this machine's macOS 13.
 
 ### Main structure
